@@ -45,3 +45,5 @@ python main.py
 - configparser
 
 Ensure the script can access the required URL and the "output_folder" folder is writable.
+
+You also need to ensure that ffmpeg is installed on your PC.
