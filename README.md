@@ -22,8 +22,7 @@ git clone https://github.com/CryptoJoma/YTSDownloader.git
 ```rb
 pip install -r requirements.txt
 ```
-3. Place your Google Drive service account credentials in a file named credentials.json in the project directory.
-4. Add your API information to the variable in config.ini
+3. Add your information to the variables in config.ini
 
 # Usage
 1. Run the script:
