@@ -1,5 +1,5 @@
 yt-dlp==2023.7.6
-numpy==1.25.0
+numpy==2.0.1
 moviepy==1.0.3
 pillow==9.5.0
 pyqt5==5.15.11
