@@ -5,7 +5,7 @@ import numpy as np
 import yt_dlp
 from moviepy.editor import VideoFileClip, ImageClip, CompositeVideoClip
 from PIL import Image
-from PyQt5.QtWidgets import (
+from PyQt6.QtWidgets import (
     QApplication, 
     QMainWindow, 
     QWidget, 
@@ -24,8 +24,8 @@ from PyQt5.QtWidgets import (
     QFormLayout,
     QToolButton
 )
-from PyQt5.QtCore import QThread, pyqtSignal, Qt, QSize, QPoint
-from PyQt5.QtGui import QIcon
+from PyQt6.QtCore import QThread, pyqtSignal, Qt, QSize, QPoint
+from PyQt6.QtGui import QIcon
 import configparser
 import logging
 
@@ -292,17 +292,17 @@ class CustomTitleBar(QWidget):
         self.window().close()
 
     def mousePressEvent(self, event):
-        if event.button() == Qt.LeftButton:
-            self.initial_pos = event.globalPos() - self.window().frameGeometry().topLeft()
+        if event.button() == Qt.MouseButton.LeftButton:
+            self.initial_pos = event.globalPosition().toPoint() - self.window().frameGeometry().topLeft()
             event.accept()
 
     def mouseMoveEvent(self, event):
-        if event.buttons() == Qt.LeftButton and self.initial_pos is not None:
-            self.window().move(event.globalPos() - self.initial_pos)
+        if event.buttons() == Qt.MouseButton.LeftButton and self.initial_pos is not None:
+            self.window().move(event.globalPosition().toPoint() - self.initial_pos)
             event.accept()
 
     def mouseDoubleClickEvent(self, event):
-        if event.button() == Qt.LeftButton:
+        if event.button() == Qt.MouseButton.LeftButton:
             self.maximize_window()
             event.accept()
 
@@ -343,7 +343,7 @@ class VideoDownloaderTab(QWidget):
 
         self.progress_bar = QProgressBar()
         self.progress_bar.setValue(0)
-        self.progress_bar.setAlignment(Qt.AlignCenter)
+        self.progress_bar.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.progress_bar.setTextVisible(True)
         self.progress_bar.setStyleSheet(
             """
@@ -419,7 +419,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.oldPosition = QPoint()  # Initialize oldPosition
-        self.setWindowFlags(Qt.FramelessWindowHint)
+        self.setWindowFlags(Qt.WindowType.FramelessWindowHint)
         self.setWindowTitle("YTSDownloader")
         self.setGeometry(100, 100, 800, 600)
         self.setStyleSheet(open(f"themes/{theme}/style.qss", "r").read())  # Load the PyDracula stylesheet  
@@ -453,15 +453,15 @@ class MainWindow(QMainWindow):
         self.worker.start()
 
     def mousePressEvent(self, event):
-        self.oldPosition = event.globalPos()
+        self.oldPosition = event.globalPosition().toPoint()
 
     def mouseMoveEvent(self, event):
-        delta = QPoint(event.globalPos() - self.oldPosition) 
+        delta = QPoint(event.globalPosition().toPoint() - self.oldPosition) 
         self.move(self.x() + delta.x(), self.y() + delta.y()) 
-        self.oldPosition = event.globalPos()
+        self.oldPosition = event.globalPosition().toPoint()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
