@@ -38,12 +38,11 @@ python main.py
 
 # Dependencies
 - Python 3.x
-- PyQt5
+- PyQt6
 - yt-dlp
 - numpy
 - moviepy
 - pillow
-- pyqt5
 - configparser
 
 Ensure the script can access the required URL and the "output_folder" folder is writable.
