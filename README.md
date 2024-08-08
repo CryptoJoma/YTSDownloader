@@ -6,7 +6,7 @@ This advanced tool lets you download and customize YouTube Shorts and Instagram 
 - Bulk Download: Easily download all Shorts from any YouTube channel or Reels from any Instagram with just a few clicks.
 - Custom Watermark: Add a unique image as a watermark to your videos to safeguard your content and enhance your brand.
 - Content Protection: Ensures your content is recognized and safeguarded against unauthorized use.
-- User-friendly Interface: Provides a graphical user interface (GUI) built with PyQt5, making it easy for users to interact with the application.
+- User-friendly Interface: Provides a graphical user interface (GUI) built with PyQt6, making it easy for users to interact with the application.
 - Progress Tracking: Displays progress bars for both download and merge processes, allowing users to track the progress of each task.
 - Logging: Logs the status of each task, providing users with detailed information about the download and upload operations.
 - Error Handling: Handles errors gracefully and provides informative messages to users in case of download or upload failures.
