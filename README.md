@@ -1,6 +1,34 @@
-# YTSDownloader
-Imagine downloading all the Shorts from your channel or profile and personalising them with a unique watermark. YTSDownloader makes this a reality!<br>
-This advanced tool lets you download and customize YouTube Shorts and Instagram Reels in bulk, ensuring that each video showcases your identity and protects your content.
+<h2 align="center">
+  YTSDownloader - v0.0.1
+</h2>
+<p align="center">Imagine downloading all the Shorts from your channel or profile and personalising them with a unique watermark. YTSDownloader makes this a reality!<br>
+This advanced tool lets you download and customize YouTube Shorts and Instagram Reels in bulk, ensuring that each video showcases your identity and protects your content.</p>
+<div align="center">
+  <img alt="Demo" src="./Images/readme-img1.png" />
+</div>
+
+<br/>
+
+<div align="center">
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) &nbsp;
+[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
+![GitHub Repo stars](https://img.shields.io/github/stars/CryptoJoma/CyberPunk-Portfolio?color=blue&logo=github&style=for-the-badge) &nbsp;
+![GitHub forks](https://img.shields.io/github/forks/CryptoJoma/CyberPunk-Portfolio?color=blue&logo=github&style=for-the-badge)
+
+</div>
+
+<h3 align="center">
+    🔹
+    <a href="https://github.com/CryptoJoma/YTSDownloader/issues">Report Bug</a> &nbsp; &nbsp;
+    🔹
+    <a href="https://github.com/CryptoJoma/YTSDownloader/issues">Request Feature</a>
+</h3>
+
+## TL;DR
+
+You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [CryptoJoma](https://github.com/CryptoJoma/YTSDownloader). Thanks!
 
 # Features
 - Bulk Download: Easily download all Shorts from any YouTube channel or Reels from any Instagram with just a few clicks.
@@ -30,7 +58,7 @@ pip install -r requirements.txt
 python main.py
 ```
 2. Enter the output_folder in the provided input field.
-3. 2. Enter the YT Channel or IG Profile in the provided input field.
+3. Enter the YT Channel or IG Profile in the provided input field.
 4. Click the "Start" button to initiate the download and merge process.
 5. The progress bars will indicate the progress of the download and merge processes.
 6. Upon completion, the log will display the status of the tasks.
