@@ -3,9 +3,6 @@
 </h2>
 <p align="center">Imagine downloading all the Shorts from your channel or profile and personalising them with a unique watermark. YTSDownloader makes this a reality!<br>
 This advanced tool lets you download and customize YouTube Shorts and Instagram Reels in bulk, ensuring that each video showcases your identity and protects your content.</p>
-<div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
-</div>
 
 <br/>
 
